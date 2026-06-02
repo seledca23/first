@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — Движение Первых</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;900&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="nav" id="navbar">
+    <div class="nav__inner">
+        <a href="index.html" class="nav__logo">
+            <div class="nav__logo-emblem">П</div>
+            <div class="nav__logo-text">
+                <span class="nav__logo-main">ДВИЖЕНИЕ ПЕРВЫХ</span>
+                <span class="nav__logo-sub">МБОУ «Борковская СОШ»</span>
+            </div>
+        </a>
+        <div class="nav__links" id="navLinks">
+            <a href="index.html" class="nav__link">Главная</a>
+            <a href="about.html" class="nav__link">О движении</a>
+            <a href="activities.html" class="nav__link">Направления</a>
+            <a href="news.html" class="nav__link">Новости</a>
+            <a href="contact.html" class="nav__link active">Контакты</a>
+            <a href="join.html" class="nav__link nav__link--cta">Вступить</a>
+        </div>
+        <button class="nav__burger" id="burger" aria-label="Меню">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<section class="page-hero">
+    <div class="page-hero__bg"></div>
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Главная</a>
+            <span>/</span>
+            <span>Контакты</span>
+        </div>
+        <h1 class="page-hero__title">Контакты</h1>
+        <p class="page-hero__subtitle">Свяжитесь с нами или найдите нас в школе</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2 class="section-title">Найдите нас</h2>
+                <div class="contact-items">
+                    <div class="contact-item">
+                        <div class="contact-item__icon">📍</div>
+                        <div class="contact-item__text">
+                            <h4>Адрес</h4>
+                            <p>ул. Набережная, 20<br>МБОУ «Борковская СОШ»</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item__icon">✉️</div>
+                        <div class="contact-item__text">
+                            <h4>Email</h4>
+                            <p><a href="mailto:school@example.ru">borkovskayasc@obr.edu35.ru</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item__icon">📞</div>
+                        <div class="contact-item__text">
+                            <h4>Телефон</h4>
+                            <p><a href="tel:+71234567890">+8(817-54)-38-2-24</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item__icon">🕐</div>
+                        <div class="contact-item__text">
+                            <h4>Время работы</h4>
+                            <p>Пн–Пт: 8:00 – 18:00<br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-socials">
+                    <h4>Мы в соцсетях</h4>
+                    <div class="contact-socials__links">
+                        <a href="https://vk.com/club202832467" class="contact-social-link">
+                            <span>ВКонтакте</span>
+                            <span>↗</span>
+                        </a>
+                        <a href="#" class="contact-social-link">
+                            <span>YouTube</span>
+                            <span>↗</span>
+                        </a>
+                        <a href="https://будьвдвижении.рф" target="_blank" class="contact-social-link">
+                            <span>будьвдвижении.рф</span>
+                            <span>↗</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrap">
+                <h2 class="section-title">Напишите нам</h2>
+                <div class="contact-form">
+                    <div class="form-group">
+                        <label class="form-label">Ваше имя</label>
+                        <input type="text" class="form-input" placeholder="Иванов Иван">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email или телефон</label>
+                        <input type="text" class="form-input" placeholder="email@example.ru">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Тема</label>
+                        <select class="form-input">
+                            <option>Вопрос о вступлении</option>
+                            <option>Вопрос о мероприятиях</option>
+                            <option>Вопрос о направлениях</option>
+                            <option>Другое</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Сообщение</label>
+                        <textarea class="form-input form-textarea" placeholder="Ваш вопрос или предложение..."></textarea>
+                    </div>
+                    <button class="btn btn--primary btn--full" onclick="this.textContent='Отправлено! ✓'; this.disabled=true; this.style.background='#2d7a2d'">Отправить сообщение</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__grid">
+            <div class="footer__brand">
+                <div class="footer__logo">
+                    <div class="nav__logo-emblem">П</div>
+                    <div class="nav__logo-text">
+                        <span class="nav__logo-main">ДВИЖЕНИЕ ПЕРВЫХ</span>
+                        <span class="nav__logo-sub">МБОУ «Борковская СОШ»</span>
+                    </div>
+                </div>
+                <p class="footer__tagline">Быть первыми — значит брать на себя ответственность.</p>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__heading">Навигация</h4>
+                <ul class="footer__links">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О движении</a></li>
+                    <li><a href="activities.html">Направления</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__heading">Контакты</h4>
+                <div class="footer__contacts">
+                    <div class="footer__contact"><span>📍</span><span>ул. Набережная 20</span></div>
+                    <div class="footer__contact"><span>✉️</span><span>borkovskayasc@obr.edu35.ru</span></div>
+                    <div class="footer__contact"><span>📞</span><span>+8(817-54)-38-2-24</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <span>© 2026 Первичное отделение «Движения Первых» МБОУ «Борковская СОШ»</span>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
