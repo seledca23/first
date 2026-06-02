@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вступить — Движение Первых</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;900&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="nav" id="navbar">
+    <div class="nav__inner">
+        <a href="index.html" class="nav__logo">
+            <div class="nav__logo-emblem">П</div>
+            <div class="nav__logo-text">
+                <span class="nav__logo-main">ДВИЖЕНИЕ ПЕРВЫХ</span>
+                <span class="nav__logo-sub">МБОУ «Борковская СОШ»</span>
+            </div>
+        </a>
+        <div class="nav__links" id="navLinks">
+            <a href="index.html" class="nav__link">Главная</a>
+            <a href="about.html" class="nav__link">О движении</a>
+            <a href="activities.html" class="nav__link">Направления</a>
+            <a href="news.html" class="nav__link">Новости</a>
+            <a href="contact.html" class="nav__link">Контакты</a>
+            <a href="join.html" class="nav__link nav__link--cta active">Вступить</a>
+        </div>
+        <button class="nav__burger" id="burger" aria-label="Меню">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<section class="page-hero page-hero--red">
+    <div class="page-hero__bg"></div>
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Главная</a>
+            <span>/</span>
+            <span>Вступить</span>
+        </div>
+        <h1 class="page-hero__title">Стань первым!</h1>
+        <p class="page-hero__subtitle">Вступи в «Движение Первых» прямо сейчас</p>
+    </div>
+</section>
+
+<!-- STEPS -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-label">Как вступить</div>
+            <h2 class="section-title">Три простых шага</h2>
+        </div>
+        <div class="steps">
+            <div class="step">
+                <div class="step__num">1</div>
+                <div class="step__content">
+                    <h3>Заполни заявку</h3>
+                    <p>Заполни форму ниже или обратись лично к советнику директора по воспитанию в кабинете 25.</p>
+                </div>
+            </div>
+            <div class="step__arrow">→</div>
+            <div class="step">
+                <div class="step__num">2</div>
+                <div class="step__content">
+                    <h3>Пройди встречу</h3>
+                    <p>Участвуй во вводном занятии, познакомься с ребятами и выбери своё направление.</p>
+                </div>
+            </div>
+            <div class="step__arrow">→</div>
+            <div class="step">
+                <div class="step__num">3</div>
+                <div class="step__content">
+                    <h3>Стань членом</h3>
+                    <p>Получи членский билет и начни активную жизнь в движении!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FORM -->
+<section class="section section--light">
+    <div class="container">
+        <div class="join-form-wrap">
+            <div class="join-form-header">
+                <div class="section-label">Заявка</div>
+                <h2 class="section-title">Анкета участника</h2>
+                <p>Заполни форму, и мы свяжемся с тобой в течение рабочего дня</p>
+            </div>
+            <div class="join-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Фамилия <span class="form-required">*</span></label>
+                        <input type="text" class="form-input" placeholder="Иванов">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Имя <span class="form-required">*</span></label>
+                        <input type="text" class="form-input" placeholder="Иван">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Отчество</label>
+                        <input type="text" class="form-input" placeholder="Иванович">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Класс <span class="form-required">*</span></label>
+                        <select class="form-input">
+                            <option value="">Выберите класс</option>
+                            <option>5 класс</option><option>6 класс</option>
+                            <option>7 класс</option><option>8 класс</option>
+                            <option>9 класс</option><option>10 класс</option>
+                            <option>11 класс</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Дата рождения <span class="form-required">*</span></label>
+                    <input type="date" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Телефон родителя/опекуна <span class="form-required">*</span></label>
+                    <input type="tel" class="form-input" placeholder="+7 (___) ___-__-__">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Интересующие направления</label>
+                    <div class="form-checkboxes">
+                        <label class="form-check"><input type="checkbox"> Юнармия</label>
+                        <label class="form-check"><input type="checkbox"> Волонтёры Победы</label>
+                        <label class="form-check"><input type="checkbox"> ЮИД</label>
+                        <label class="form-check"><input type="checkbox"> Наука и технологии</label>
+                        <label class="form-check"><input type="checkbox"> Культура и искусство</label>
+                        <label class="form-check"><input type="checkbox"> Экология</label>
+                        <label class="form-check"><input type="checkbox"> Спорт</label>
+                        <label class="form-check"><input type="checkbox"> Медиа</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">О себе (по желанию)</label>
+                    <textarea class="form-input form-textarea" placeholder="Расскажи немного о своих увлечениях и почему хочешь вступить в движение..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-check form-check--agree">
+                        <input type="checkbox" id="agree">
+                        <span>Я даю согласие на обработку персональных данных</span>
+                    </label>
+                </div>
+                <button class="btn btn--primary btn--full btn--large" onclick="handleSubmit(this)">Подать заявку</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHY JOIN -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-label">Зачем вступать</div>
+            <h2 class="section-title">Что ты получишь</h2>
+        </div>
+        <div class="benefits__grid">
+            <div class="benefit-card">
+                <div class="benefit-card__icon">🏆</div>
+                <h3>Достижения и награды</h3>
+                <p>Грамоты, медали, дипломы за участие в конкурсах и соревнованиях регионального и федерального уровня</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-card__icon">👥</div>
+                <h3>Команда и дружба</h3>
+                <p>Единомышленники со всей России. Дружба, которая остаётся на всю жизнь</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-card__icon">📈</div>
+                <h3>Развитие навыков</h3>
+                <p>Лидерство, командная работа, творческое мышление, организаторские способности</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-card__icon">🎯</div>
+                <h3>Карьерный старт</h3>
+                <p>Участие в движении учитывается при поступлении в вузы и трудоустройстве</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__grid">
+            <div class="footer__brand">
+                <div class="footer__logo">
+                    <div class="nav__logo-emblem">П</div>
+                    <div class="nav__logo-text">
+                        <span class="nav__logo-main">ДВИЖЕНИЕ ПЕРВЫХ</span>
+                        <span class="nav__logo-sub">МБОУ «Борковская СОШ»</span>
+                    </div>
+                </div>
+                <p class="footer__tagline">Быть первыми — значит брать на себя ответственность.</p>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__heading">Навигация</h4>
+                <ul class="footer__links">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О движении</a></li>
+                    <li><a href="activities.html">Направления</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__heading">Контакты</h4>
+                <div class="footer__contacts">
+                    <div class="footer__contact"><span>📍</span><span>ул. Набережная 20</span></div>
+                    <div class="footer__contact"><span>✉️</span><span>borkovskayasc@obr.edu35.ru</span></div>
+                    <div class="footer__contact"><span>📞</span><span>+8(817-54)-38-2-24</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <span>© 2026 Первичное отделение «Движения Первых» МБОУ «Борковская СОШ»</span>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+function handleSubmit(btn) {
+    const agree = document.getElementById('agree');
+    if (!agree.checked) {
+        alert('Пожалуйста, дайте согласие на обработку персональных данных');
+        return;
+    }
+    btn.textContent = 'Заявка отправлена! ✓';
+    btn.disabled = true;
+    btn.style.background = '#2d7a2d';
+}
+</script>
+</body>
+</html>
